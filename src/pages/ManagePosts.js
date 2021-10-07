@@ -85,7 +85,11 @@ function ManagePosts({ postsArray, editPost, deletePost }) {
                     <DeleteIcon />
                   </IconButton>
                   <IconButton edge="end">
-                    <Typography variant="h6" style={{ fontSize: "15px" }}>
+                    <Typography
+                      variant="h6"
+                      style={{ fontSize: "15px" }}
+                      onClick={() => editHandler(post.id)}
+                    >
                       modifier
                     </Typography>
                     <ChevronRightIcon
