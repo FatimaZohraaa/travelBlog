@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Home from "./pages/Home";
-// import Jobs from "./pages/Jobs";
-// import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -36,6 +34,7 @@ function App() {
           style={{ minHeight: "83.8vh" }}
         >
           <Switch>
+            <Route path="/" exact component={Home} />
             <Route path="/contact" component={Contact} />
           </Switch>
           <Footer />
