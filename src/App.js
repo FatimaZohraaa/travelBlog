@@ -35,7 +35,9 @@ function App() {
           alignItems="center"
           style={{ minHeight: "83.8vh" }}
         >
-          <Switch></Switch>
+          <Switch>
+            <Route path="/contact" component={Contact} />
+          </Switch>
           <Footer />
         </Grid>
       </ThemeProvider>
