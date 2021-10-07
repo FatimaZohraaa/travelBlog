@@ -36,6 +36,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact" component={Contact} />
+            <Route path="/create" component={CreatePost} />
             <Route path="/manage" component={ManagePosts} />
           </Switch>
           <Footer />
