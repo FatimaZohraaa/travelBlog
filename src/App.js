@@ -38,6 +38,7 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route path="/create" component={CreatePost} />
             <Route path="/manage" component={ManagePosts} />
+            <Route path="/edit" component={EditPost} />
           </Switch>
           <Footer />
         </Grid>
