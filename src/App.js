@@ -36,6 +36,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact" component={Contact} />
+            <Route path="/manage" component={ManagePosts} />
           </Switch>
           <Footer />
         </Grid>
