@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
     marginTop: 30,
+    backgroundColor: "#003366",
   },
   field: {
     marginTop: 25,
@@ -92,7 +93,7 @@ function CreatePost({ posts, postId, replacePost }) {
             sauvegarder
           </Button>
 
-          <Link to="/">
+          <Link to="/manage">
             <Button
               variant="contained"
               color="primary"

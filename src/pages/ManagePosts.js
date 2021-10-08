@@ -56,7 +56,7 @@ function ManagePosts({ postsArray, editPost, deletePost }) {
       >
         <Link to="/create" style={{ textDecoration: "none" }}>
           <Button
-            style={{ marginBottom: "20px" }}
+            style={{ marginBottom: "20px", backgroundColor: "#003366" }}
             variant="contained"
             color="primary"
             href="#contained-buttons"

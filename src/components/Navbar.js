@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: "fantasy",
+    fontFamily: "Roboto",
   },
   homePage: {
     marginRight: 20,
@@ -44,7 +44,7 @@ export default function ButtonAppBar({ sendTheme }) {
   };
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: "#003366" }}>
         <Toolbar>
           <Link to="/">
             <IconButton

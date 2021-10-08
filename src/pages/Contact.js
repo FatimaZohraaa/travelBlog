@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
     marginTop: 30,
+    backgroundColor: "#003366",
   },
   field: {
     marginTop: 15,
