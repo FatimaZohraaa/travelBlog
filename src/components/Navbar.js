@@ -27,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 20,
   },
 }));
-
 export default function ButtonAppBar({ sendTheme }) {
   const classes = useStyles();
   const [theme, setTheme] = useState("lightTheme");
@@ -44,8 +43,8 @@ export default function ButtonAppBar({ sendTheme }) {
   };
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor: "#003366" }}>
-        <Toolbar>
+      <AppBar position="static">
+        <Toolbar style={{ backgroundColor: "#003366" }}>
           <Link to="/">
             <IconButton
               style={{ color: "white" }}
@@ -60,7 +59,7 @@ export default function ButtonAppBar({ sendTheme }) {
           <Link
             to={{
               pathname:
-                "https://www.facebook.com/FR.France.fr/?brand_redir=151406801552581",
+                "https://www.facebook.com/facebookapp/?brand_redir=185150934832623",
             }}
             target="_blank"
           >
@@ -74,15 +73,7 @@ export default function ButtonAppBar({ sendTheme }) {
               <FacebookIcon />
             </IconButton>
           </Link>
-          <Typography variant="h6" className={classes.title}>
-            Voyagez en France !
-          </Typography>
-          {/* <Link to="/services" style={{ color: "white" }}>
-            <Button color={"inherit"}>خدمات</Button>
-          </Link>
-          <Link to="/jobs" style={{ color: "white" }}>
-            <Button color="inherit">توظيف</Button>
-          </Link> */}
+          <Typography variant="h6" className={classes.title}></Typography>
 
           <Link to="/manage" style={{ color: "white", textDecoration: "none" }}>
             <Button color="inherit">Gérer</Button>

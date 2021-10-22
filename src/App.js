@@ -10,7 +10,7 @@ import ManagePosts from "./pages/ManagePosts";
 import EditPost from "./pages/EditPost";
 import { Grid } from "@material-ui/core";
 import Footer from "./components/Footer";
-
+import "./generalCss.css";
 const darkTheme = createTheme({ palette: { type: "dark" } });
 const lightTheme = createTheme({ palette: { type: "light" } });
 
@@ -31,7 +31,9 @@ function App() {
           direction="column"
           justifyContent="space-between"
           alignItems="center"
-          style={{ minHeight: "83.8vh" }}
+          style={{
+            minHeight: "83.8vh",
+          }}
         >
           <Switch>
             <Route path="/" exact component={Home} />
@@ -40,8 +42,8 @@ function App() {
             <Route path="/manage" component={ManagePosts} />
             <Route path="/edit" component={EditPost} />
           </Switch>
-          <Footer />
         </Grid>
+        <Footer />
       </ThemeProvider>
     </Router>
   );
